@@ -13,16 +13,15 @@ Design
 
 - Ontop I have added these:
 
-a) Ansible collections ( Ref: requirements.yml )
-
     - community.general : I rely on the email module aloooot for sending email notifications real-time as playbooks are running!!
 
     - awx.awx  : I hate clicking and clicking on the AAP GUI to build Organizations, Projects,Job Templates , Workflows etc.. A good Ansible script does that for me! You will need awx.awx
 
     - f5networks.f5_modules : Needed this in some project to update F5s. I thought, why not add them permanently.
 
-    -  infoblox.nios_modules : Some modules I have had a hard time understanding!..But needed them along the way :(
-
+    - infoblox.nios_modules : Some modules I have had a hard time understanding!..But needed them along the way :(
+    
+- Checkout the requirements.txt to see the python modules included to support the above modules.
 
 - Used ansible-builder to build the podman image . All this done on an RHEL 8* environment.
 
@@ -46,6 +45,11 @@ Step 1: Configure your environmental variables for the following :
   e) DOCKER_PASSWORD
 
 
-      
-      
+Step 2: $ ./build-exec-env.sh
 
+- Script has the steps to do the image build within different functions.
+      
+      
+Author
+=======
+254in61 
