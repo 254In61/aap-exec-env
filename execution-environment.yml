@@ -1,0 +1,13 @@
+---
+# This is the default file ansible-builder looks for to create a build context.
+
+version: 1
+
+build_arg_defaults:
+  EE_BASE_IMAGE: 'ansible-automation-platform/ee-minimal-rhel8:2.14.1-3'
+
+dependencies:
+  galaxy: requirements.yml
+  python: requirements.txt
+  system: bindep.txt
+

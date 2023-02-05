@@ -1,0 +1,15 @@
+---
+# Requirements file for the ansible modules.
+# points to a valid requirements file for the ansible-galaxy collection install -r ... command
+
+collections:
+  - name: ansible.netcommon
+    version: ">=2.0.0"
+  - name: f5networks.f5_modules
+    source: https://github.com/F5Networks/f5-ansible-f5modules#ansible_collections/f5networks/f5_modules
+    type: git
+    version: devel
+  - community.general
+  - awx.awx
+  - infoblox.nios_modules
+  
