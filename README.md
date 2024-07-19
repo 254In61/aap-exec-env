@@ -1,13 +1,12 @@
-Overview
-========
+## Overview
 
 This is after frustrations of having to build endless execution environments to run different things in the different Ansible Automation Platform projects I have undertaken!
 
 In this repo, I build one mother execution environment, that will keep being updated whenever I realize I need something else!
 
-Design
-=======
-- Base Image is ansible-automation-platform/ee-minimal-rhel8:2.14.1-3.
+## Design
+
+- Base Image is ansible-automation-platform-24/ee-supported-rhel8:latest.
 
   ** You need to $ podman login registry/redhat.io  to have access to this one. Use your usual redhat credentials.
 
@@ -27,10 +26,14 @@ Design
 
 - In this project am storing my end image in docker.io and that's where I pull it down whenever I want to use, or update it if I need to.
 
+## ee-supported-rhel8:latest
+- This is the base image.
 
+- $ ansible-navigator images ... the pick image number.. and enter ansible collections number to see the collections included.
 
-How to use
-===========
+- See COLLECTIONS.md
+
+## How to use
 
 Step 1: Configure your environmental variables for the following :
 
@@ -50,6 +53,5 @@ Step 2: $ ./build-exec-env.sh
 - Script has the steps to do the image build within different functions.
       
       
-Author
-=======
+## Author
 254in61 

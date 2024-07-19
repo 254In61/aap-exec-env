@@ -1,0 +1,7 @@
+# Contains the python entry points to a Python requirements file for pip install -r
+# Used to provide Python dependencies. Can be from pip freeze.
+f5-sdk
+netaddr
+packaging
+infoblox-client
+
