@@ -70,10 +70,10 @@ upload_to_docker(){
     podman push docker.io/$DOCKER_USER/$AAP_IMAGE_NAME --tls-verify=false
 
     ## Pulling into the lab environment ( controller-01 )
-    podman pull docker.io/$DOCKER_USER/$AAP_IMAGE_NAME --tls-verify=false   # Public image don't need authentication
+    ## podman pull docker.io/$DOCKER_USER/$AAP_IMAGE_NAME --tls-verify=false   # Public image don't need authentication
 
     ## Confirm
-    podman images
+    ## podman images
 
 
 }
