@@ -1,4 +1,4 @@
-ARG EE_BASE_IMAGE="ansible-automation-platform-24/ee-supported-rhel8:latest"
+ARG EE_BASE_IMAGE="registry.redhat.io/ansible-automation-platform/ee-minimal-rhel9:2.17.2-1"
 ARG EE_BUILDER_IMAGE="quay.io/ansible/ansible-builder:latest"
 ARG PYCMD="/usr/bin/python3"
 ARG PKGMGR_PRESERVE_CACHE=""

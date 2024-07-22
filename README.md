@@ -37,16 +37,11 @@ In this repo, I build one mother execution environment, that will keep being upd
 
 Step 1: Configure your environmental variables for the following :
 
-  a) REDHAT_USER
+  - IMAGE_NAME
 
-  b) REDHAT_PASSWORD
-
-  c) IMAGE_NAME
-
-  d) DOCKER_USER
-
-  e) DOCKER_PASSWORD
-
+Step 2: On your dev environment ensure you are successfully logged into:
+  - docker.io          : $ podman login docker.io
+  - registry.redhat.io : $ podman login registry.redhat.io
 
 Step 2: $ ./build-exec-env.sh
 

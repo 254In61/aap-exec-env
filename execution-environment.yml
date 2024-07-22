@@ -5,6 +5,8 @@ version: 1
 
 build_arg_defaults:
   EE_BASE_IMAGE: 'ansible-automation-platform-24/ee-supported-rhel8:latest'
+  # Do I use this one and add the extras or use the minimal one? 
+  # Incase I need to do email notifications or infoblox??
 
 dependencies:
   galaxy: requirements.yml

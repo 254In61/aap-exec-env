@@ -12,7 +12,7 @@ base_env(){
 redhat_io(){
     # Login into registry.redhat.io
     echo "" && echo "===Login to registry.redhat.io" &&  echo ""
-    podman login registry.redhat.io -u=$REGISTRY_USN -p=$REGISTRY_PWD --tls-verify=false
+    podman login registry.redhat.io -u=$REDHAT_USN -p=$REDHAT_PWD --tls-verify=false
 }
 
 ansible_builder(){
@@ -79,7 +79,7 @@ upload_to_docker(){
 }
 
 base_env
-redhat_io
+# redhat_io
 ansible_builder
 test_image
 #upload_to_pah

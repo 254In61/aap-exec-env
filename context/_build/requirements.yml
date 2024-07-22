@@ -4,12 +4,12 @@
 # Keep adding your collections here
 
 collections:
-  - name: f5networks.f5_modules
+  - name: f5networks.f5_modules # Needed for f5 networks
     source: https://github.com/F5Networks/f5-ansible-f5modules#ansible_collections/f5networks/f5_modules
     type: git
     version: devel
-  - name: community.general
-  - name: awx.awx
+  - name: community.general # Needed for email notifications
+  # - name: awx.awx  # If infoblox is in use
   - name: infoblox.nios_modules
   - name: infra.controller_configuration
   - name: containers.podman

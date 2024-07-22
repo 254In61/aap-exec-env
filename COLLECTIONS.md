@@ -51,3 +51,4 @@ ansible:
 49│    details: ansible [core 2.15.11]
 
 - What would you want to add?
+
